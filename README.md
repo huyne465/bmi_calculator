@@ -27,14 +27,12 @@
 - **Navigation**: GetX Navigation
 - **Reactive Programming**: GetX Observables (Rx)
 
-## 🎯 Ưu điểm của kiến trúc
-
 ### **MVVM + GetX**
 - **Tách biệt logic**: UI và business logic hoàn toàn tách biệt
 - **Reactive UI**: Tự động cập nhật khi dữ liệu thay đổi
 - **Memory Management**: GetX tự động dispose controllers
-- **Simple Navigation**: Điều hướng đơn giản với GetX
-- **Dependency Injection**: GetX cung cấp DI tích hợp
+- **Simple Navigation**: Navigate management với GetX
+- **Dependency Injection**: Binding
 
 ### **Reactive Programming**
 - **Real-time Updates**: UI tự động cập nhật khi observable thay đổi
