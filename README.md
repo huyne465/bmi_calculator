@@ -1,16 +1,44 @@
-# bmi_calculator
+# BMI Calculator
 
-A new Flutter project.
+Ứng dụng tính toán chỉ số khối cơ thể (BMI) được phát triển bằng Flutter với kiến trúc MVVM và quản lý trạng thái GetX.
 
-## Getting Started
+## 📱 Tính năng
 
-This project is a starting point for a Flutter application.
+- **Chọn giới tính**: Nam/Nữ
+- **Nhập thông tin cơ thể**:
+  - Chiều cao (slider)
+  - Cân nặng (increment/decrement)
+  - Tuổi (increment/decrement)
+- **Tính toán BMI**: Tự động tính toán và phân loại tình trạng sức khỏe
+- **Kết quả chi tiết**: Hiển thị BMI, trạng thái và lời khuyên
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📋 Tính năng chính
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. **Quản lý Input**
+- Validation giới tính bắt buộc
+- Giới hạn giá trị tối thiểu (weight > 1, age > 1)
+- Cập nhật chiều cao qua slider
+
+## 🛠️ Công nghệ sử dụng
+
+- **State Management**: GetX
+- **Architecture**: MVVM Pattern
+- **Navigation**: GetX Navigation
+- **Reactive Programming**: GetX Observables (Rx)
+
+## 🎯 Ưu điểm của kiến trúc
+
+### **MVVM + GetX**
+- **Tách biệt logic**: UI và business logic hoàn toàn tách biệt
+- **Reactive UI**: Tự động cập nhật khi dữ liệu thay đổi
+- **Memory Management**: GetX tự động dispose controllers
+- **Simple Navigation**: Điều hướng đơn giản với GetX
+- **Dependency Injection**: GetX cung cấp DI tích hợp
+
+### **Reactive Programming**
+- **Real-time Updates**: UI tự động cập nhật khi observable thay đổi
+- **Clean Code**: Code ngắn gọn và dễ đọc
+- **Performance**: Chỉ rebuild những widget cần thiết
+
+### **DEMO**
